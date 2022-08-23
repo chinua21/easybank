@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Public Sans', sans-serif;
+}
+
+:root{
+    --Dark-Blue: hsl(233, 26%, 24%);
+    --Lime-Green: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+     --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayis-Blue: hsl(220, 16%, 96%);
+    --VeryLight-Gray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+html,body{
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+}
+#navlink{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 70px;
+    background-color:var(--VeryLight-Gray);
+    position: relative;
+    z-index: 2;
+}
+
+#navlink img{
+    width: 85%;
+}
+
+a{
+    text-decoration: none;
+}
+.image1{
+    position: relative;
+    width: 50%;
+    right: -10%;
+    margin-top: -15%;
+    margin-bottom: -15%;
+    z-index: 1;
+
+}
+
+#first{
+    display: flex;
+}
+
+.links1{
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+}
+
+.links1 a{
+    color:var(--GrayishBlue);
+}
+.botton a{
+    background: linear-gradient( to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 20px;
+    padding:8px 18px;
+    color:#fff;
+    font-size: 10px; 
+}
+
+.first2{
+    padding: 100px 70px;
+}
+.first2 h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+}
+.first2 p{
+    padding-bottom: 30px;
+    color: var(--GrayishBlue);
+}
+.first2 a{
+    background: linear-gradient( to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 20px;
+    padding: 8px 17px;
+    color:#fff;
+    font-size: 10px;
+}
+#mainsecond1{
+    margin-top: 50px;
+    padding: 40px 70px;
+    background-color: var(--LightGrayis-Blue);
+    position: relative;
+    z-index: -1;
+}
+
+.Leomessi{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.Leomessi p{
+    font-size: 10px;
+    color: var(--GrayishBlue);
+}
+
+.frank{
+    padding:0 10px;
+}
+
+.OBOthegoat{
+    width: 40%;
+}
+
+.OBOthegoat h1{
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--Dark-Blue);
+}
+
+.OBOthegoat P{
+    padding:20px 0 ;
+    font-size: 12px;
+    padding-bottom: 40px;
+    color: var(--GrayishBlue);
+}
+
+.Leomessi img{
+    width: 18%;
+}
+
+.Leomessi h3{
+    padding: 20px 0;
+    color: var(--Dark-Blue);
+}
+
+.first2 p{
+    font-size: 14px;
+}
+
+#messi30{
+    background-color: var(--VeryLight-Gray);
+}
+
+.all1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 70px;
+    gap: 40px;
+    padding-bottom: 38px;
+}
+
+#messi30 h4{
+    padding:38px 70px;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.all1 img{
+    width: 100%;
+}
+
+.josh{
+    background-color: #fff;
+}
+
+.josh h3{
+    color: var(--Dark-Blue);
+}
+
+.josh p{
+    color: var(--GrayishBlue);
+}
+
+.all1 p{
+    padding: 15px 0;
+    font-size: 12px;
+}
+
+.all1 h3:hover{
+    color: var(--Lime-Green);
+}
+
+#lastlink{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 70px;
+    background-color: var(--Dark-Blue);
+}
+
+
+.lastlink2 a{
+    background: linear-gradient( to right,hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-radius: 18px;
+    padding: 8px 18px;
+    color:#fff;
+    font-size: 12px;
+}
+
+.letsrock a, .lastlink3 a{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-top: 8px;
+    
+}
+
+.onlyme{
+    padding-top: 50px;
+    display: flex;
+    gap: 8px;
+}
+
+.onlyme a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.onlyme a:hover{
+    color: var(--Lime-Green);
+}
+
+ .lastlink3 a:hover{
+    color: var(--Lime-Green);
+}
+
+.letsrock a:hover{
+    color: var(--Lime-Green);
+}
+
+.p1{
+    font-size: 12px;
+    padding-top: 27px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navToggle{
+    display: none;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--Lime-Green); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 7px; /* Some padding */
+    border-radius: 2px; /* Rounded corners */
+    font-size: 16px; /* Increase font size */
+  }
+
+@media screen and ( max-width:992px){
+   .image1{
+    width: 45%;
+   }
+   .OBOthegoat h1{
+    font-size: 45px;
+   }
+
+   #lastlink{
+    padding: 30px 50px;
+   }
+
+   #navlink{
+    padding:20px 30px;
+   }
+}
+
+
+@media screen and ( max-width:768px){
+    .image1{
+        width: 75%;
+    }
+  .first2 h1{
+    font-size: 38px;
+  }
+  #mainsecond1{
+    padding: 40px 40px;
+  }
+
+  .all1, .Leomessi{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #lastlink{
+    padding:25px;
+  }
+}
+
+@media screen and (max-width:576px){
+    #first{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image1{
+        padding-left: 25px;
+        width: 75%;
+        margin: -10% 25% 0 0;
+    }
+
+    .first2{
+        text-align: center;
+    }
+
+    .OBOthegoat{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
+
+
+
+    .OBOthegoat h1{
+        font-size: 30px;
+        padding-left: 0;
+    }
+
+    .navToggle{
+        display: block;
+        cursor: pointer;
+    }
+
+    .botton, .closeMenu{
+        display: none;
+    }
+    
+    .links1{
+        position: absolute;
+        left: 50%;
+        top: -270%;
+        transform: translate(-50%, -50%);
+        background-color: var(--VeryLight-Gray);
+        border-radius: 10px;
+        width: 65%;
+        text-align: center;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        transition: .5s;
+        box-shadow: 10px 10px 30px var(--Dark-Blue);
+    }
+
+    .all1{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 30px 35px;
+      }
+      #lastlink{
+        /* padding: 25px 20px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .first2{
+        padding: 40px 30px;
+      }
+    
+   /* #lastlink{
+    padding: 30px 30px;
+   } */
+
+   .letsrock{
+    font-size: 14px;
+    padding: 2px 3px;  
+   }
+   .lastlink3{
+    font-size: 14px;
+    padding: 2px 3px; 
+    }
+.onlyme a{
+    padding-left:44px;
+    padding-bottom: 20px;
+}
+     .lastlink2{
+        padding-top: 20px;
+     }
+.p1{
+    display: none;
+}
+
+}
+
+
+@media screen and ( max-width:414px){
+
+
+
+
+    .OBOthegoat{
+        text-align: center;
+} 
+
+
+.Leomessi{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+#messi30 h4{
+    text-align: center;
+
+}
+
+.all1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+#lastlink{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.p1{
+    display: none;
+}
+
+.lastlink2{
+    padding-top:20px ;
+}
+
+.onlyme a{
+    padding-left: 35px;
+    padding-bottom: 20px;
+}
+
+
+}
+
+@media screen and ( max-width:375px){
+    #first{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .image1{
+        padding-left: 25px;
+        width: 75%;
+    }
+
+    .OBOthegoat{
+        text-align: center;
+
+    }
+
+    #messi30 h4{
+        text-align: center;
+
+    }
+
+    .all1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #lastlink{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .p1{
+        display: none;
+    }
+
+    .lastlink2{
+        padding-top:20px ;
+    }
+
+    .onlyme a{
+        padding-left: 25px;
+        padding-bottom: 20px;
+    }
+  
+}
