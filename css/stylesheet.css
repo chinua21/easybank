@@ -285,7 +285,7 @@ html, body{
 .nav-links{
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
 }
 
 .request-button{
@@ -294,6 +294,10 @@ html, body{
     border-radius: 50px;
     background: linear-gradient(to right rgb(194, 238, 0),limegreen);
     font-size: 10px;
+}
+
+@media screen and (max-width:480px) {
+    
 }
 
 }
