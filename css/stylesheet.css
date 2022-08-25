@@ -45,7 +45,7 @@ html, body{
 }
 
 .main-section{
-    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.6)), url(/images/forum.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(/images/forum.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -226,81 +226,105 @@ html, body{
 
   
 @media screen and (max-width: 768px){
-    .nav{
+        .nav{
+            font-size: 15px;
+            margin: 10px;
+        }
+
+        .bg-text h1{
+            font-size: 38px;  
+        }
+        
+        .bg-text P{
+            font-size: 20px;
+        }
+
+        .egb{
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+        }
+
+        
+    .step h1{
+        font-weight: 400;
+        margin-bottom: 10px;
+        font-size: 22px;
+    }
+
+    .stepp{
+        width:70%
+    }
+
+    .stepp{
+        font-weight: 400;
+        margin-bottom: 20px;
         font-size: 15px;
-        margin: 10px;
     }
 
-    .bg-text h1{
-        font-size: 38px;  
-    }
-    
-    .bg-text P{
-        font-size: 20px;
+
+    .hgb h3{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-weight: 400px;
     }
 
-    .egb{
-        grid-template-columns: repeat(1, 1fr);
+    .hgb{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
         gap: 5px;
+        width: 90%;
     }
 
-    
-.step h1{
-    font-weight: 400;
-    margin-bottom: 10px;
-    font-size: 22px;
-}
-
-.stepp{
-    width:70%
-}
-
-.stepp{
-    font-weight: 400;
-    margin-bottom: 20px;
-    font-size: 15px;
-}
+    #footer{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
 
 
-.hgb h3{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 400px;
-}
+    .nav-links{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
 
-.hgb{
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 5px;
-    width: 90%;
-}
-
-#footer{
-    display: grid;
-    text-align: center;
-    justify-content: center;
-}
-
-
-.nav-links{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-}
-
-.request-button{
-    color: black;
-    padding: 5px 10px;
-    border-radius: 50px;
-    background: linear-gradient(to right rgb(194, 238, 0),limegreen);
-    font-size: 10px;
+    .request-button{
+        color: black;
+        padding: 5px 10px;
+        border-radius: 50px;
+        background: linear-gradient(to right rgb(194, 238, 0),limegreen);
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width:480px) {
-    
+   .egb,.hgb{
+    grid-template-columns: 1fr;
+   }
+
+   #rev{
+    text-align: center;
+   }
+
+   .stepp{
+    margin: auto;
+   }
+
+   .bg-text{
+    width: 70%;
+   }
 }
 
-}
+@media screen and (max-width:375px) {
+    .bg-text{
+     width: 90%;
+    }
+
+    .bg-text h1{
+        font-size: 28px;
+    }
+ }
+ 
 
 
 
